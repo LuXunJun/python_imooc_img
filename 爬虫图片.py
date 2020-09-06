@@ -9,7 +9,7 @@ encode_type = chardet.detect(html)
 # c 同学
 # A同学
 # 进行相应解码，赋给原标识符（变量）
-# B同学 
+# B同学
 html = html.decode(encode_type['encoding'])
 img_urls = re.findall(r'src=.+\.jpg', html)
 a = 11
@@ -22,3 +22,4 @@ for url in img_urls:
     img_file = req.read()
     f.write(img_file)
     i += 1
+
