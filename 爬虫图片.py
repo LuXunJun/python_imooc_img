@@ -6,8 +6,7 @@ from pip._vendor import chardet
 req = request.urlopen('https://coding.imooc.com/')
 html = req.read()
 encode_type = chardet.detect(html)
-# 进行相应解码，赋给原标识符（变量）
-# 提交代码1111
+# A同学
 html = html.decode(encode_type['encoding'])
 img_urls = re.findall(r'src=.+\.jpg', html)
 
