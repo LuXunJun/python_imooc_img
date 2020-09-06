@@ -7,6 +7,8 @@ req = request.urlopen('https://coding.imooc.com/')
 html = req.read()
 encode_type = chardet.detect(html)
 # A同学
+# 进行相应解码，赋给原标识符（变量）
+# B同学
 html = html.decode(encode_type['encoding'])
 img_urls = re.findall(r'src=.+\.jpg', html)
 
