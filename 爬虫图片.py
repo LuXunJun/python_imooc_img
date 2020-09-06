@@ -12,7 +12,7 @@ encode_type = chardet.detect(html)
 # B同学 
 html = html.decode(encode_type['encoding'])
 img_urls = re.findall(r'src=.+\.jpg', html)
-
+a = 11
 i = 0
 for url in img_urls:
     url = str(url).replace("src=\"", "http:")
