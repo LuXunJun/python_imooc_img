@@ -3,6 +3,8 @@ import re
 
 from pip._vendor import chardet
 
+msg ="master msg"
+
 req = request.urlopen('https://coding.imooc.com/')
 html = req.read()
 encode_type = chardet.detect(html)
