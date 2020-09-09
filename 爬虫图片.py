@@ -19,3 +19,4 @@ for url in img_urls:
     i += 1
 
 a = "dev1"
+a = "master"
