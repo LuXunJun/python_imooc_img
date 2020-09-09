@@ -20,5 +20,4 @@ for url in img_urls:
     f.write(img_file)
     i += 1
 
-a = "master_1"
-a = "dev_1"
+a = "dev_2"
