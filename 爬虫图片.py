@@ -17,3 +17,5 @@ for url in img_urls:
     img_file = req.read()
     f.write(img_file)
     i += 1
+
+a = 1
